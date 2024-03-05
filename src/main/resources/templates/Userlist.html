@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<a href="Userlist" class="btn btn-primary">Register</a>
+						<div th:if="${session.msg}">
+							<h5 class="text-center text-success" th:text="${session.msg}"></h5>
+							<th:block th:text="${@sessionHelper.removeMessegeFromSession()}"></th:block>
+						</div>
+						
+						
+						
+						
+						
+</body>
+</html>
